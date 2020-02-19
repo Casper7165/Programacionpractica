@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", (event) =>{
     const formAlumnos = document.querySelector("#frmAlumno");
     formAlumnos.addEventListener("submit", (e)=>{
