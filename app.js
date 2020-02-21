@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", e=>{
     } else if(opcion.value == "longitud"){
       var array = ["mm!MILIMETRO","cm!CENTIMETRO","mt!METRO","km!KILOMETRO","milla!MILLA","yarda!YARDA","pie!PIE","pulgada!PULGADA"];
     } else if(opcion.value == "almacenamiento"){
-      var array = ["bit!Bit","byte!BYTE","kb!KILOBYTE","mb!MEGABYTE","gb!GIGABYTE","tb!TERABYTE"];
+      var array = ["bit!BIT","byte!BYTE","kb!KILOBYTE","mb!MEGABYTE","gb!GIGABYTE","tb!TERABYTE"];
     } else if(opcion.value == "peso"){
       var array = ["gramo!GRAMO","kg!KILOGRAMO","libra!LIBRA","onza!ONZA","tonelada larga!TONELADA LARGA","tonelada corta!TONELADA CORTA"];
     };
