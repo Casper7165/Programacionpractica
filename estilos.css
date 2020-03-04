@@ -16,7 +16,7 @@ body{
 }
 input, textarea{
     height: 24px;
-    border: solid 1px rgb(31, 240, 59);
+    border: solid 1px rgb(51, 230, 75);
     border-radius: 5px;
 }
 textarea{
