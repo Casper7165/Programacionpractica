@@ -4,29 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Bienvenido a Programacion IV</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="Public/img/favicon.ico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="public/css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css">
+    <title>ALQUILER DE PELICULAS</title>
 </head>
-<body>
-    <p>Bienvenidos a Programacion IV</p>
-    <form method="post">
-        <input pattern="[a-zA-ZñÑ ]{3,65}" required type="text" placeholder="Nombre">
-        <br><br>
-        <textarea pattern="[\w]{10,150}" required cols="30" rows="3"></textarea> <br>
-        <input required type="date" >
-        <input type="color" >
-        <input type="button" value="Registrar">
-        <input type="radio" name="cbo" id="suma">
-        <input type="radio" name="cbo" id="Resta">
-        <input type="radio" name="cbo" id="Multi">
-        <input type="radio" name="cbo" id="Division">
-        <br>
-        <input type="checkbox" id="php"> <label for="php">PHP</label for="">
-        <input type="checkbox" id="js"> <label for="js">JS</label>
-        <input type="checkbox" id="json"> <label for="json">JSON</label>
-        <input type="checkbox" id="nodejs"> <label for="nodejs">NodeJS</label>
-        <br>
-        <input type="submit" value="Guardar">
+<body class="bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-dark indigo">
+    <a class="navbar-brand" href="#">APP de Peliculas :)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mostrar-cliente" data-modulo="cliente" data-form="cliente" href="#">cliente</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mostrar-alquiler" data-modulo="alquiler" data-form="alquiler" href="#">alquiler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mostrar-pelicula" data-modulo="pelicula" data-form="pelicula"  href="#">pelicula</a>
+        </li>
+       
+      </ul>
+      <span class="navbar-text white-text">
+        Parcial 2 computo 2
+      </span>
+    </div>
+  </nav>
+    <div class="container">
+        <div class="modulos" id="vista-cliente"></div>
+        <div class="modulos" id="vista-buscar-cliente"></div>
+        <div class="modulos" id="vista-alquiler"></div>
+        <div class="modulos" id="vista-buscar-alquiler"></div>
+        <div class="modulos" id="vista-pelicula"></div>
+        <div class="modulos" id="vista-buscar-pelicula"></div>
+        <div class="modulos" id="vista-matricula"></div>
+        <div class="modulos" id="vista-inscripcion"></div>
+        <div class="modulos" id="vista-notas"></div>
+    </div>
+    <!--js librerias-->
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="module" src="public/js/app.js"></script>
+
+    <script src="https://unpkg.com/vue-select@3.0.0"></script>
+    
 </form>
 </body>
 </html>
